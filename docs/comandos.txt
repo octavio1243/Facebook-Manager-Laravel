@@ -1,0 +1,64 @@
+Correr servidor:
+
+php artisan serve
+
+-------------------------------------------------------------------
+
+1) Crear migraciones (DECLARAR TABLAS)
+
+php artisan make:model StatusRecordPost -m
+php artisan make:model StatusPost -m
+php artisan make:model StatusPostGroup -m
+php artisan make:model StatusAdministrator -m
+php artisan make:model StatusGroup -m
+php artisan make:model StatusGroupAdministrator -m
+php artisan make:model StatusUser -m
+
+php artisan make:model Status -m
+
+// php artisan make:model ImagePost -m
+php artisan make:model RecordPost -m
+php artisan make:model Post -m
+php artisan make:model PostGroup -m
+// php artisan make:model ImageFacebookAccount -m
+php artisan make:model FacebookAccount -m
+php artisan make:model FacebookAccountGroup -m
+php artisan make:model Group -m
+// php artisan make:model ImageGroup -m
+php artisan make:model PaymentMethod -m
+php artisan make:model GroupAdministrator -m
+php artisan make:model Plan -m
+php artisan make:model User -m //Ya creado
+php artisan make:model Administrator -m
+php artisan make:model Rol -m
+php artisan make:model Image -m
+// php artisan make:model PostImage -m
+
+3) Realizar migraciones
+
+php artisan migrate
+
+4) Crear controladores
+
+php artisan make:controller RegisterController
+
+php artisan make:controller LoginController
+
+php artisan make:controller HomeController
+
+php artisan make:controller ApiClientController
+
+php artisan make:controller FacebookAccountController
+
+php artisan make:controller ImagesController
+
+php artisan make:controller PostContoller
+
+php artisan make:controller UserContoller
+
+php artisan make:controller PanelContoller
+
+5) Crear reglas de request
+
+php artisan make:request RegisterRequest
+php artisan make:request LoginRequest
